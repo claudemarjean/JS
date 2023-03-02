@@ -1,10 +1,15 @@
 // Create Object here
 // =========================================
-let episode = {
-    title : 'strategy',
-    duration : 90,
-    haBeenWatched : false
-  }
+
+class Episode {
+    constructor(title,duration,hasBeenWatched){
+        this.title = title;
+        this.duration = duration,
+        this.hasBeenWatched = hasBeenWatched
+    }
+}
+
+let episode = new Episode('strategy',90,false);
   
   
   // =========================================
