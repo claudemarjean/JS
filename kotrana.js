@@ -11,7 +11,7 @@ class Episode {
 
 let firstepisode = new Episode('strategy',21,true);
 let secondEpisode = new Episode('strategy',20,false);
-let thirdEpisode = new Episode('strategy',25,false);
+let thirdEpisode = ['strategy',25,false];
   
   
   // =========================================
@@ -24,7 +24,7 @@ let thirdEpisode = new Episode('strategy',25,false);
   Duration: ${secondEpisode.duration} min
   ${secondEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`
 
-  document.querySelector('#episode-info-third').innerText = `Episode: ${thirdEpisode.title}
-  Duration: ${thirdEpisode.duration} min
-  ${thirdEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`
+  document.querySelector('#episode-info-third').innerText = `Episode: ${thirdEpisode[0]}
+  Duration: ${thirdEpisode[1]} min
+  ${thirdEpisode[2] ? 'Already watched' : 'Not yet watched'}`
 
