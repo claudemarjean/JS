@@ -1,21 +1,14 @@
-/**
- * String interpolation
- */
-const myName = 'claude';
-const saluation = `bienvenue sur mon site ${myName}!`;
-console.log(saluation);
-
-/**
- * Objet
- */
-let myObject = {
-    title : 'my title',
-    author : 'claude',
-    numberpage : 210,
-    isavailable : true
-
-}
-
-console.log(myObject);
-
-alert('voir console log')
+// Create Object here
+// =========================================
+let episode = {
+    title : 'strategy',
+    duration : 90,
+    haBeenWatched : false
+  }
+  
+  
+  // =========================================
+  
+  document.querySelector('#episode-info').innerText = `Episode: ${episode.title}
+  Duration: ${episode.duration} min
+  ${episode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`
