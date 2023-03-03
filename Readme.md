@@ -4,3 +4,5 @@ La classe est comme un plan
 
 Pour ajouter votre élément au début du tableau plutôt qu'à la fin, utilisez la méthode   unshift  et pour la fin c'est push
 
+Quiz Vérifiez ce que vous avez appris sur les données et les types ! Note(9/10)
+
