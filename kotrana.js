@@ -17,11 +17,13 @@ let thirdEpisode = ['strategy',25,false];
 
 let episodes = [];
 
-episodes.push(firstepisode);
+
 episodes.push(secondEpisode);
 episodes.push(secondEpisode);
 episodes.pop();
 episodes.push(thirdEpisode);
+episodes.unshift(firstepisode);//ajouter un élément au début du tableau
+
 //comme  let episodes = [firstepisode, secondEpisode, thirdEpisode];
   // =========================================
   
