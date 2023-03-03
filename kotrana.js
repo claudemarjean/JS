@@ -13,7 +13,16 @@ let firstepisode = new Episode('strategy',21,true);
 let secondEpisode = new Episode('strategy',20,false);
 let thirdEpisode = ['strategy',25,false];
   
-let episodes = [firstepisode, secondEpisode, thirdEpisode];
+
+
+let episodes = [];
+
+episodes.push(firstepisode);
+episodes.push(secondEpisode);
+episodes.push(secondEpisode);
+episodes.pop();
+episodes.push(thirdEpisode);
+//comme  let episodes = [firstepisode, secondEpisode, thirdEpisode];
   // =========================================
   
  // ====================================
