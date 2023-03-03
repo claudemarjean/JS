@@ -13,18 +13,26 @@ let firstepisode = new Episode('strategy',21,true);
 let secondEpisode = new Episode('strategy',20,false);
 let thirdEpisode = ['strategy',25,false];
   
-  
+let episodes = [firstepisode, secondEpisode, thirdEpisode];
   // =========================================
   
-  document.querySelector('#episode-info-first').innerText = `Episode: ${firstepisode.title}
-  Duration: ${firstepisode.duration} min
-  ${firstepisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`
+ // ====================================
 
-  document.querySelector('#episode-info-second').innerText = `Episode: ${secondEpisode.title}
-  Duration: ${secondEpisode.duration} min
-  ${secondEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`
+const body = document.querySelector('body');
 
-  document.querySelector('#episode-info-third').innerText = `Episode: ${thirdEpisode[0]}
-  Duration: ${thirdEpisode[1]} min
-  ${thirdEpisode[2] ? 'Already watched' : 'Not yet watched'}`
+for(let i = 0; i < 12; i++) {
+  let newDiv = document.createElement('div');
+  newDiv.classList.add('series-frame');
 
+  let newTitle = document.createElement('h2');
+  newTitle.innerText = 'The Story of Tau';
+
+  let newParagraph = document.createElement('p');
+  newParagraph.innerText = `${episodes[i].title}
+          ${episodes[i].duration} minutes
+          ${episodes[i].hasBeenWatched ? 'Already been watched' : 'Not yet watched'}`;
+          
+  newDiv.append(newTitle);
+  newDiv.append(newParagraph);
+  body.append(newDiv);
+}
