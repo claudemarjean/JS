@@ -2,3 +2,5 @@ Cette liste mentale d'attributs sert de modèle pour cet objet. En programmation
 
 La classe est comme un plan
 
+Tableau d'objet
+
