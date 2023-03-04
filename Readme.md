@@ -6,3 +6,5 @@ Pour ajouter votre élément au début du tableau plutôt qu'à la fin, utilisez
 
 Quiz Vérifiez ce que vous avez appris sur les données et les types ! Note(9/10)
 
+https://www.geeksforgeeks.org/difference-between-var-and-let-in-javascript/
+
