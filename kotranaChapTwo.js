@@ -4,8 +4,11 @@ const espaceMessage = document.getElementById("message");
 const bouton = document.getElementById("bouton");
 //On pointe sur l'élément de champ de saisie de l'age
 const ageInput = document.getElementById("age");
+//On pointe sur l'élément de la checkbox de contrôle parental
+const parentalInput = document.getElementById("parental");
 //On défini la variage age qu'on utilisera et un variable définissant l'age de la majorité
 let age;
+let isControlParentalActive;
 let ageMajorite = 18;
 
 
@@ -30,14 +33,19 @@ function onConfirm(){
     alert("Ceci n'est pas un nombre");
     return;
   }
+  //On récupère la valeur du checkbox de contrôle parentale. "true" si coché ou "false" si décoché
+  isControlParentalActive = parentalInput.checked;
 
-  //=======Code corrigé======
-  if(age < ageMajorite){
+   //====Code à rédiger ici======
+  
+  //si non majeur et que le controle parental est activé appeller la fonction refuser(), sinon apeller la fonction valider()
+  if (age < ageMajorite && isControlParentalActive == true){
     refuser();
-  }else{
-    valider()
   }
-  //=======/Code corrigé======
+  if (isControlParentalActive == false || age >= ageMajorite){
+    valider();
+  }
+  //=======/Code à rédiger ici======
   
   
   //On vide le champ de saisie
