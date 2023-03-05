@@ -28,3 +28,5 @@ Quiz chap 2 (10/10)
 
 NOUVEAU FORMATION "Créez des pages web dynamiques avec JavaScript"
 https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript/7910981-preparez-votre-projet
+
+
