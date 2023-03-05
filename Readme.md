@@ -8,3 +8,4 @@ Quiz Vérifiez ce que vous avez appris sur les données et les types ! Note(9/10
 
 https://www.geeksforgeeks.org/difference-between-var-and-let-in-javascript/
 
+Quiz chap 2 (10/10)
