@@ -22,3 +22,9 @@ Quiz chap 2 (10/10)
 ##################
 
 # Résumé de se chapitre https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6280131-resume-du-cours
+
+
+
+
+NOUVEAU FORMATION "Créez des pages web dynamiques avec JavaScript"
+https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript/7910981-preparez-votre-projet
