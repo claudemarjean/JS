@@ -1,7 +1,19 @@
-body{
-  text-align:center;
+body {
+  background-color: #111;
+  color: #EEE;
+  font-family: 'Roboto Slab', serif;
 }
 
-#control{
-  padding-bottom:10px;
+.series-frame {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 2px solid #EEE;
+  margin: 30px;
+  padding: 10px;
+}
+
+.series-frame h2 {
+  margin-right: 20px;
 }
