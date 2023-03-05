@@ -9,3 +9,9 @@ Quiz Vérifiez ce que vous avez appris sur les données et les types ! Note(9/10
 https://www.geeksforgeeks.org/difference-between-var-and-let-in-javascript/
 
 Quiz chap 2 (10/10)
+
+##################
+"La première règle des fonctions est qu'elles devraient être petites. La deuxième règle des fonctions est qu'elles devraient être encore plus petites."
+
+– Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
+##################
