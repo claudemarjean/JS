@@ -20,3 +20,5 @@ Quiz chap 2 (10/10)
 
 – Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
 ##################
+
+# Résumé de se chapitre https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript/6280131-resume-du-cours
