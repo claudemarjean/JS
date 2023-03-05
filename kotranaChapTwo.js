@@ -15,8 +15,8 @@ let episodes = [
 // Add logic here
 // ======================
 
-for(let episode of episodes){
-  episode.hasBeenWatched = false;
+for(let i in episodes){
+  episodes[i].hasBeenWatched = false;
 }
     
 // ======================
