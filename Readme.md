@@ -15,3 +15,8 @@ Quiz chap 2 (10/10)
 
 – Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
 ##################
+
+"Vous devriez choisir un nom de variable avec le même soin que pour votre premier enfant."
+
+– Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship
+##################
