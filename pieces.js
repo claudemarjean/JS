@@ -2,7 +2,7 @@
 const reponse  = await fetch('pieces-autos.json');
 const pieces = await reponse.json();
 
-const article = piece[0];
+const article = pieces[0];
 const imageElement = document.createElement("img");
 imageElement.src = article.image;
 const nomElement = document.createElement("h2");
