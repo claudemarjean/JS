@@ -1,5 +1,6 @@
+import { ajoutListenerAvis } from "./avis";
 // Récupération des pièces depuis le fichier JSON
-const reponse = await fetch('pieces-autos.json');
+const reponse = await fetch("http://localhost:8081/pieces");
 const pieces = await reponse.json();
 
 function genererPieces(pieces){
@@ -23,6 +24,8 @@ function genererPieces(pieces){
         descriptionElement.innerText = article.description ?? "Pas de description pour le moment.";
         const stockElement = document.createElement("p");
         stockElement.innerText = article.disponibilite ? "En stock" : "Rupture de stock";
+        // const detailElement = document.createElement("button");
+        // detailElement.innerText = Afficher 
         
         // On rattache la balise article a la section Fiches
         sectionFiches.appendChild(pieceElement);
@@ -36,6 +39,7 @@ function genererPieces(pieces){
         pieceElement.appendChild(stockElement);
     
      }
+     ajoutListenerAvis();
 }
 
 //génération de premier page
