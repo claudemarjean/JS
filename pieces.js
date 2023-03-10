@@ -25,7 +25,7 @@ function genererPieces(pieces){
         const stockElement = document.createElement("p");
         stockElement.innerText = article.disponibilite ? "En stock" : "Rupture de stock";
         // const detailElement = document.createElement("button");
-        // detailElement.innerText = Afficher 
+        // detailElement.innerText = Afficher  
         
         // On rattache la balise article a la section Fiches
         sectionFiches.appendChild(pieceElement);
