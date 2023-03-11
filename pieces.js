@@ -1,4 +1,4 @@
-import { ajoutListenerAvis } from "./avis";
+import { ajoutListenersAvis } from "./avis.js";
 // Récupération des pièces depuis le fichier JSON
 const reponse = await fetch("http://localhost:8081/pieces");
 const pieces = await reponse.json();
@@ -24,8 +24,9 @@ function genererPieces(pieces){
         descriptionElement.innerText = article.description ?? "Pas de description pour le moment.";
         const stockElement = document.createElement("p");
         stockElement.innerText = article.disponibilite ? "En stock" : "Rupture de stock";
-        // const detailElement = document.createElement("button");
-        // detailElement.innerText = Afficher  
+        const avisElement = document.createElement("button");
+        avisElement.innerText = "Afficher les avis";
+        avisElement.setAttribute("data-id",i);
         
         // On rattache la balise article a la section Fiches
         sectionFiches.appendChild(pieceElement);
@@ -37,9 +38,10 @@ function genererPieces(pieces){
         //Ajout des éléments au DOM pour l'exercice
         pieceElement.appendChild(descriptionElement);
         pieceElement.appendChild(stockElement);
+        pieceElement.appendChild(avisElement);
     
      }
-     ajoutListenerAvis();
+     ajoutListenersAvis();
 }
 
 //génération de premier page
