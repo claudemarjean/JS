@@ -1,5 +1,8 @@
-let string = "ednom el suot ruojnob";
+let string = "aia";
 
-let inverse = string.split('').reverse().join('');
+let isPalindrone = (str) =>{
+    str = str.toLowerCase().replace(/[^a-zA-Z0-9]/g,'');
+    return str === str.split('').reverse().join('');
+}
 
-console.log(inverse);
+console.log(isPalindrone(string));
