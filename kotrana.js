@@ -1,8 +1,15 @@
-let string = "aia";
+let tableau = [3,2,6,5,4,9];
 
-let isPalindrome = (str) =>{
-    str = str.toLowerCase().replace(/[^a-zA-Z0-9]/g,'');
-    return str === str.split('').reverse().join('');
+let sommeNumberMultipleTreeAndFive = (tableau)=>{
+     return tableau.reduce((accumulateur,element)=>{
+        if(element % 3 === 0 || element % 5 === 0){
+            return accumulateur  + element;
+        }else{
+            return accumulateur
+        }
+        
+    },0);
 }
 
-console.log(isPalindrome(string));
+let somme = sommeNumberMultipleTreeAndFive(tableau);
+console.log(somme);
